@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>វត្តកុរុរដ្ឋខេមរារាម - Cambodian Monastery New Delhi</title>
+     <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="/Users/rinran/Desktop/Website/Images/1.jpg" alt="Monastery Logo" class="logo-image">
+                    <div class="logo-text">
+                        CAMBODIAN MONASTERY<br>NEW DELHI, INDIA 
+                    </div>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search temple info..." id="searchInput">
+                    <button type="button" onclick="performSearch()">Search</button>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navigation">
+            <div class="nav-container">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#about" class="nav-item">About Temple</a>
+                <a href="#meditation" class="nav-item">Meditation</a>
+                <a href="#teachings" class="nav-item">Teachings</a>
+                <a href="#events" class="nav-item">Events</a>
+                <a href="#community" class="nav-item">Community</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </div>
+        </nav>
+
+        <section class="hero-section" id="home">
+            <div class="hero-content">
+                <h1>វត្តកុរុរដ្ឋខេមរារាម ហៅវត្តខ្មែរញូវដែលី</h1>
+        <h1>Welcome to Peace & Wisdom</h1>
+                <h2>A sanctuary of Buddhist teachings in New Delhi</h2>
+            </div>
+        </section>
+        <main class="main-content">
+            <div class="content-grid" id="about">
+                <div class="content-card">
+                    <img src="/Users/rinran/Desktop/Website/Images/11.jpg" alt="Your description" class="profile-image">
+                    <div class="card-content">
+                        <h3 class="card-title">OUR VISION</h3>
+                        <p class="card-description">To preserve and share the ancient wisdom of Cambodian Buddhism, fostering peace, compassion, and mindfulness in the heart of New Delhi.</p>
+                    </div>
+                </div>
+
+                <div class="content-card" id="meditation">
+                    <img src="/Users/rinran/Desktop/Website/Images/13.jpg" alt="Your description" class="profile-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Meditation</h3>
+                        <p class="card-description">Join our daily meditation sessions rooted in Theravada tradition. Experience inner peace through guided meditation and mindfulness practices.</p>
+                    </div>
+                    
+                </div>
+
+                <div class="content-card" id="teachings">
+                    <img src="/Users/rinran/Desktop/Website/Images/14.jpg" alt="Your description" class="profile-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Dharma Teachings</h3>
+                        <p class="card-description">Learn from our resident monks about Buddhist philosophy, ethics, and the path to enlightenment through weekly Dharma discussions.</p>
+                    </div>
+                </div>
+                
+                <div class="content-card">
+                    <img src="/Users/rinran/Desktop/Website/Images/12.jpg" alt="Your description" class="profile-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Venerable Monks</h3>
+                        <p class="card-description">Our monastery is blessed with learned monks from Cambodia who guide the community with wisdom, compassion, and traditional teachings.</p>
+                    </div>
+                </div>
+
+               <div class="content-card">
+                    <img src="/Users/rinran/Desktop/Website/Images/3.jpg" alt="Your description" class="profile-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Activity</h3>
+                        <p class="card-description">Our Monastery hosts regular Buddhist ceremonies, offerings, chanting, and Dhamma talks led by Cambodian monks,
+                                                    community with wisdom and compassion.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <img src="/Users/rinran/Desktop/Website/Images/15.jpg" alt="Your description" class="profile-image">
+                    <div class="card-content">
+                        <h3 class="card-title">FOUNDER OF TEMPLE</h3>
+                        <p class="card-description">The Indo-Khmer Theravada Buddhist Society of New Delhi was established in 1991 to promote the teachings of Theravada Buddhism, foster cultural ties between India and Cambodia.
+                                                    We are committed to preserving Buddhist heritage, supporting community welfare, and spreading the values of peace, compassion, and wisdom.
+                         
+                                   
+
+                </p>
+                    </div>
+                </div>
+           </div>
+
+            <div class="announcements" id="events">
+                <h2>Temple Announcements</h2>
+                <div class="announcement-item" onclick="showAnnouncementDetails('pchum')">
+                    <h3>🌕 Buddhist Lent (Beginning of Buddhist Lent)</h3>
+                        <p>Buddhist Lent (Vassa) begins on July 11, 2025, and ends on October 7, 2025.
+                           During this three-month rainy season retreat, monks stay in their monasteries to 
+                           focus on meditation and study. Laypeople participate by making merit, offering food, 
+                           and observing moral precepts.</p>
+                </div>
+                <div class="announcement-item" onclick="showAnnouncementDetails('dharma')">
+                    <h3>📚 Weekly Dharma Study Group</h3>
+                    <p>Every Sunday at 4 PM - Study the Tipitaka and discuss Buddhist philosophy in both English and Khmer languages. All levels welcome.</p>
+                </div>
+                <div class="announcement-item" onclick="showAnnouncementDetails('retreat')">
+                    <h3>🕯️ Full Moon Meditation Retreat</h3>
+                    <p>Monthly overnight meditation retreat on full moon days. Experience deep meditation in our peaceful temple environment with traditional chanting.</p>
+                </div>
+            </div>
+
+
+            <div class="sidebar" id="community">
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">New Visitors</h3>
+                    <div class="sidebar-item" onclick="highlightItem(this)">Introduction to Buddhism Course (off) </div>
+                    <div class="sidebar-item" onclick="highlightItem(this)">Temple Orientation Program (off) </div>
+                    <div class="sidebar-item" onclick="highlightItem(this)">Beginner's Meditation Guide</div>
+                    <div class="sidebar-item" onclick="highlightItem(this)">Cambodian Cultural Introduction</div>
+                    <div class="sidebar-item" onclick="highlightItem(this)">Community Welcome Program</div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Daily Schedule</h3>
+                    <div class="sidebar-item" onclick="highlightItem(this)">5:30 AM - Morning Chanting</div>
+                    <div class="sidebar-item" onclick="highlightItem(this)">6:00 AM - Alms Offering</div>
+                    <div class="sidebar-item" onclick="highlightItem(this)">10:30 AM - Meditation Session (off) </div>
+                    <div class="sidebar-item" onclick="highlightItem(this)">4:00 PM - Dharma Discussion (off) </div>
+                    <div class="sidebar-item" onclick="highlightItem(this)">6:00 PM - Evening Prayers</div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Community Services</h3>
+                    <div class="sidebar-item" onclick="highlightItem(this)">Cambodian Language Classes (off)</div>
+                    <div class="sidebar-item" onclick="highlightItem(this)">Traditional Arts & Crafts (off) </div>
+                    <div class="sidebar-item" onclick="highlightItem(this)">Youth Buddhist Group (off) </div>
+                    <div class="sidebar-item" onclick="highlightItem(this)">Senior Meditation Circle (off) </div>
+                    <div class="sidebar-item" onclick="highlightItem(this)">Wedding & Blessing Ceremonies (off) </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Connect With Us</h3>
+                    <div class="sidebar-item" onclick="highlightItem(this)">📱 WhatsApp Community Group</div>
+                    <div class="sidebar-item" onclick="highlightItem(this)">📧 Weekly Newsletter</div>
+                    <div class="sidebar-item" onclick="highlightItem(this)">📸 Instagram Updates</div>
+                    <div class="sidebar-item" onclick="highlightItem(this)">🎥 YouTube Dharma Talks</div>
+                    <div class="sidebar-item" onclick="highlightItem(this)">📞 Temple Phone Directory</div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer" id="contact">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>📍 Address</h4>
+                    <p>Cambodian Monastery New Delhi<br>
+                    25 Andheria More, Mehrauli, Chhattarpur<br>
+                    New Delhi - 110030</p>
+                </div>
+                <div class="contact-item">
+                    <h4>📞 Contact</h4>
+                    <p>Phone: +91-9871430923<br>
+                    Mobile: +91-9818630581<br>
+                    Email: watkhmernewdelhi@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <h4>🕒 Visiting Hours</h4>
+                    <p>Daily: 6:00 AM - 7:30 PM<br>
+                    Special Events: 5:30 AM - 10:00 PM<br>
+                    Meditation: 10:30 AM & 4:00 PM</p>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com/WatKhmerNewDelhi/" class="facebook"><img src="/Users/rinran/Desktop/Website/Images/3.svg" alt="Monastery Logo" class="logo-image" style="width: 35px; height: auto;">
+</a>
+<a href="https://www.instagram.com/?hl=en" class="Instagram"><img src="/Users/rinran/Desktop/Website/Images/4.svg" alt="Monastery Logo" class="logo-image" style="width: 35px; height: auto;">
+</a>
+<a href="https://x.com/Watkhmerdl" class="Twitter"><img src="/Users/rinran/Desktop/Website/Images/5.svg" alt="Monastery Logo" class="logo-image" style="width: 35px; height: auto;">
+</a>
+<a href="#" class="WhatsApp"><img src="/Users/rinran/Desktop/Website/Images/6.svg" alt="Monastery Logo" class="logo-image" style="width: 35px; height: auto;">
+</a>
+            </div>
+            
+            <p style="margin-top: 20px; font-size: 14px; opacity: 0.8;">
+                © 2024 Cambodian Monastery New Delhi. All rights reserved.<br>
+                Spreading the Light of Buddha's Teachings • សាធុ សាធុ សាធុ !
+            </p>
+        </footer>
+    </div>
+
+    <button class="scroll-to-top" onclick="scrollToTop()" title="Back to top">↑</button>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.nav-item').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Enhanced search functionality
+        function performSearch() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+            if (searchTerm) {
+                const content = document.body.textContent.toLowerCase();
+                if (content.includes(searchTerm)) {
+                    alert(`Found "${searchTerm}" in temple content!\n\nThis would typically highlight matching sections and provide detailed results.`);
+                } else {
+                    alert(`No results found for "${searchTerm}".\n\nTry searching for: meditation, dharma, monks, schedule, or events.`);
+                }
+            }
+        }
+
+        // Enter key search
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+
+        // Interactive sidebar items
+        function highlightItem(item) {
+            item.style.background = '#FFE4B5';
+            item.style.transform = 'translateX(10px)';
+            setTimeout(() => {
+                item.style.background = '';
+                item.style.transform = '';
+            }, 1000);
+        }
+
+        // Announcement details
+        function showAnnouncementDetails(type) {
+            const details = {
+                pchum: "Pchum Ben is one of the most important festivals in Cambodia. Join us for 15 days of ceremonies honoring ancestors, featuring traditional Khmer food, prayers, and community gathering.",
+                dharma: "Our weekly Dharma study includes meditation, discussion of Buddhist texts, and Q&A sessions. Perfect for both beginners and advanced practitioners (off) .",
+                retreat: "Our full moon retreats include silent meditation, walking meditation, chanting, and Dharma talks. Accommodation and vegetarian meals provided."
+            };
+            alert(details[type] || "More details coming soon!");
+        }
+
+        // Scroll to top functionality
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show/hide scroll to top button
+        window.addEventListener('scroll', function() {
+            const scrollButton = document.querySelector('.scroll-to-top');
+            if (window.pageYOffset > 300) {
+                scrollButton.classList.add('visible');
+            } else {
+                scrollButton.classList.remove('visible');
+            }
+        });
+
+        // Welcome message and animations
+        window.addEventListener('load', function() {
+            console.log('🙏 Welcome to the Cambodian Monastery New Delhi website!');
+            console.log('May you find peace and wisdom in your visit.');
+            
+            // Add gentle fade-in animation to cards
+            const cards = document.querySelectorAll('.content-card');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(20px)';
+                    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 100);
+                }, index * 200);
+            });
+        });
+
+        // Interactive elements feedback
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('content-card') || e.target.closest('.content-card')) {
+                const card = e.target.classList.contains('content-card') ? e.target : e.target.closest('.content-card');
+                card.style.transform = 'scale(0.98)';
+                setTimeout(() => {
+                    card.style.transform = '';
+                }, 150);
+            }
+        });
+    </script>
+</body>
+</html>
