@@ -225,7 +225,7 @@
         .hero-section {
             height: 400px;
             background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), 
-                        url('Images/2.jpg') no-repeat center center;
+                        url('2.jpg') no-repeat center center;
             background-size: cover;
             background-position: center;
             display: flex;
