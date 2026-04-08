@@ -1,6 +1,4 @@
 
-
-
 * {
         .logo-image {
         width:110px;
@@ -28,7 +26,7 @@
             background-image: 
             background-size: cover;
             background-position: center;
-            background-repeat: no-repeat;url('.Images/2.jpg);
+            background-repeat: no-repeat;url('.Images/1.jpg');
             
             /* Fallback background color */
             background-color: #8B4513;
@@ -522,4 +520,3 @@
                 padding: 20px;
             }
         }
-
